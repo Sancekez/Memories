@@ -1,5 +1,8 @@
 .slogan-block {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	white-space: inherit;
 	border: 1px solid $text-color;
 	border-radius: 32px;
 	padding: 7px 24px;

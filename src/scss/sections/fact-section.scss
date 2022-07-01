@@ -1,5 +1,5 @@
 .fact-section {
-	padding: 28px 0 9px;
+	padding: 28px 0 28px;
 	border-top: 1px solid $border;
 	border-bottom: 1px solid $border;
 	@include flex(0,center,center);
@@ -9,22 +9,25 @@
 	}
 	&__container {
 		display: flex;
+		align-items: center;
+		@include media($sm) {
+			flex-direction: column;
+		}
 	}
 	&__slogan {
 		margin-right: 20px;
-		margin-bottom: 13px;
 		font: 600 20px/24px $baseFF;
 		@include media($sm) {
 			font: 600 12px/14px $baseFF;
 			margin-right: 0;
 			width: 100%;
+			margin-bottom: 20px;
 			text-align: center;
 		}
 	}
 
 	&__text {
 		@include flex(0,center,center);
-		margin-bottom: 13px;
 		font: 500 25px/32px $baseFF;
 		span {
 			@include media($xs) {
@@ -35,10 +38,10 @@
 		}
 		strong {
 			margin: 0 25px;
-			font: 700 28px/32px $baseFF;
+			font: 700 24px/28px $baseFF;
 			@include media($xs) {
 				margin-left: 0;
-				margin-right: 7px;
+				margin-right: 3px;
 			}
 		}
 		
