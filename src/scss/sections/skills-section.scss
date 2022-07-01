@@ -1,6 +1,6 @@
 .skills-section {
 	&__title {
-		letter-spacing: 1px;
+		margin-bottom: 34px;
 	}
 
 	&__items {
@@ -13,7 +13,7 @@
 	&__item {
 		@include flex(0, center, center, nowrap);
 		background-color: $bg-grey;
-		padding: 24px 38px;
+		padding: 24px 16px 24px 38px;
 		border-radius: 17px;
 		height: 100%;
 
@@ -37,7 +37,8 @@
 		}
 
 		&-title {
-			letter-spacing: 1px;
+			/* letter-spacing: 1px; */
+			font: 22px/35px $baseFF;
 		}
 	}
 }
