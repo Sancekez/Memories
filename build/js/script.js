@@ -158,10 +158,15 @@ $(document).ready(function () {
 			
 			document.getElementById('js-days').innerText = days;
 			document.getElementById('js-days--action-xs').innerText = days;
+			document.getElementById('main-action-days').innerText = hours;
 
 			document.getElementById('h').innerText = hours;
 			document.getElementById('m').innerText = minutes;
 			document.getElementById('s').innerText = seconds;
+
+			document.getElementById('main-action-hour').innerText = hours;
+			document.getElementById('main-action-minutes').innerText = minutes;
+			document.getElementById('main-action-seconds').innerText = seconds;
 		}
 
 		counts();

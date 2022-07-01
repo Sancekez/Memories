@@ -80,10 +80,14 @@
 			padding: 9px 20px;
 		}
 	}
+	&--sm-bold {
+		font-weight: 600;
+	}
 	&--yellow {
 		background-color: $yellow;
 		color: $text-dark;
 		&:hover {
+			color: $text-dark;
 			background-color: $yellow-hover;
 			transition: all 0.3s;
 		}

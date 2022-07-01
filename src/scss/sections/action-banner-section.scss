@@ -1,0 +1,67 @@
+.action-banner-section {
+	@include flex(0,center,center,nowrap);
+	background-color: $blue;
+	border-radius: 24px;
+	position: relative;
+	padding: 62px 43px 0 65px;
+	&::after {
+		position: absolute;
+		top: 33px;
+		left: 0;
+		content: "";
+		display: block;
+		width: 266px;
+		height: 8px;
+		background-color: #615eeb;
+		border-radius: 4px;
+		transform: translateX(150%);
+	}
+
+	&__info {
+		color: $white;
+	}
+
+	&__title {
+	}
+
+	&__price {
+		@include flex(0,center,center);
+	}
+
+	&__price-new {
+		font: 800 40px/54px $baseFF2;
+	}
+
+	&__price-old {
+	}
+
+	&__sail {
+	}
+
+	&__sail-count {
+	}
+
+	&__time {
+	}
+
+	&__time-icon {
+	}
+
+	&__clock {
+	}
+
+	&__btn {
+	}
+
+	&__right {
+	}
+
+	&__right-img {
+	}
+
+	&__right-decor-left {
+	}
+
+	&__right-decor-right {
+	}
+}
