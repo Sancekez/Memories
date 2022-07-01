@@ -44,7 +44,6 @@
 				background: none;
 			}
 			@include media($xs) {
-
 				right: auto;
 				left: 30%;
 			}
@@ -64,7 +63,7 @@
 			height: 51px;
 			display: block;
 			position: absolute;
-			bottom: -18px;
+			bottom: -17px;
 			left: 0;
 			@include media($xs) {
 				display: none;

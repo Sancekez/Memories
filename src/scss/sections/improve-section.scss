@@ -1,7 +1,9 @@
 .improve-section {
-	gap: 32px 0;
-	@include media($sm) {
-		gap: 12px 0;
+	&__row {
+		gap: 32px 0;
+		@include media($sm) {
+			gap: 12px 0;
+		}
 	}
 	&__item {
 		display: grid;
@@ -31,7 +33,7 @@
 				background-color: #262626;
 			}
 			&--green {
-				background-color: #41A273;
+				background-color: #41a273;
 			}
 		}
 	}
@@ -89,6 +91,5 @@
 				}
 			}
 		}
-
 	}
 }

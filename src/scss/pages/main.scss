@@ -1,5 +1,5 @@
 .main {
-	overflow: hidden;
+	overflow-x: hidden;
 	padding-top: 60px;
 	&__banner {
 		padding: 139px 0 218px;
@@ -54,7 +54,6 @@
 		@include media($sm) {
 			padding: 37px 0 34px;
 		}
-
 	}
 	&__action-section {
 		position: fixed;

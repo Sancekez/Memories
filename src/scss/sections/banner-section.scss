@@ -1,9 +1,11 @@
 .banner-section {
-	@include flex();
-	flex-wrap: nowrap;
+	&__container {
+		@include flex();
+		flex-wrap: nowrap;
 
-	@include media($sm) {
-		flex-direction: column;
+		@include media($sm) {
+			flex-direction: column;
+		}
 	}
 	&__info {
 		@include media($sm) {
