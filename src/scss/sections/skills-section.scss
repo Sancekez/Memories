@@ -10,32 +10,34 @@
 		}
 	}
 
-	&__wrap {
-		@include flex(0,center,center,nowrap);
+	&__item {
+		@include flex(0, center, center, nowrap);
 		background-color: $bg-grey;
 		padding: 24px 38px;
 		border-radius: 17px;
+		height: 100%;
+
 		@include media($xs) {
 			padding: 16px 23px;
 		}
-	}
-	&__item-icon {
-		svg {
-			width: 30px;
-			height: 21px;
-			fill: none;
-			stroke-width: 2px;
-			stroke: $text-color;
-			@include media($xs) {
-				width: 24px
-			}
-		}
-		@include flex(0,center,center);
-		margin-right: 16px;
-	}
-	
 
-	&__item-title {
-		letter-spacing: 1px;
+		&-icon {
+			svg {
+				width: 30px;
+				height: 21px;
+				fill: none;
+				stroke-width: 2px;
+				stroke: $text-color;
+				@include media($xs) {
+					width: 24px;
+				}
+			}
+			@include flex(0, center, center);
+			margin-right: 16px;
+		}
+
+		&-title {
+			letter-spacing: 1px;
+		}
 	}
 }
