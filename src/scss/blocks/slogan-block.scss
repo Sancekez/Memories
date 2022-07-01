@@ -5,9 +5,10 @@
 	white-space: inherit;
 	border: 1px solid $text-color;
 	border-radius: 32px;
-	padding: 7px 24px;
+	padding: 7px 28px;
 	font: 600 23px/28px $baseFF;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.6px;
+
 	@include media($md) {
 		font: 600 21px/24px $baseFF;
 	}

@@ -1,26 +1,32 @@
 .about-section {
 	// margin: 0;
 	position: relative;
-	max-width: 1150px;
+	/* max-width: 1150px;
 	padding: 0 15px;
-	margin: 0 auto;
+	margin: 0 auto; */
 	@include media($xs) {
 		padding: 48px 0 16px;
+	}
+
+	&__container {
+		position: relative;
 	}
 	&__info {
 	}
 	&__title {
-		margin-bottom: 26px;
+		margin-bottom: 20px;
+		max-width: 810px;
 	}
 
 	&__slogan {
-		margin-bottom: 26px;
+		margin-bottom: 20px;
 		@include media($md) {
 			text-align: center;
 		}
 	}
 
 	&__text {
+		max-width: 810px;
 		@include media($xs) {
 			line-height: 28px;
 		}
@@ -32,9 +38,10 @@
 		&-lg {
 			display: block;
 			position: absolute;
-			padding: 0 15px;
-			left: 0;
-			bottom: 0;
+			/* padding: 0 15px; */
+			right: 15px;
+			bottom: 15px;
+
 			@include media($xs) {
 				display: none;
 			}

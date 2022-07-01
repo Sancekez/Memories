@@ -86,11 +86,11 @@ $(document).ready(function () {
 	}
 
 	// slick
-	$(".slider-block--carousel .js-slick").slick({
+	$(".js-comments-slider").slick({
 		dots: true,
 		slidesToShow: 2,
-		prevArrow: $('button.slick-arrow--prev'),
-		nextArrow: $('button.slick-arrow--next'),
+		prevArrow: $('.js-comments-slider-prev'),
+		nextArrow: $('.js-comments-slider-next'),
 		centerMode: false,
 		responsive: [{
 			breakpoint: 960,
