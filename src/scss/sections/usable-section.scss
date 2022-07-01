@@ -1,0 +1,68 @@
+.usable-section {
+	display: flex;
+	flex-direction: column;
+	&__head {
+		@include flex(space-between, center, center, nowrap);
+		position: relative;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		margin-bottom: 19px;
+		@include media($xs) {
+			max-width: 221px;
+			margin-bottom: 16px;
+		}
+	}
+
+	&__banner {
+		padding: 31px 38px;
+		@include flex(0, center, center, nowrap);
+		background-color: $bg-grey;
+		border-radius: 17px;
+		max-width: 666px;
+		width: 100%;
+		@include media($sm) {
+			padding: 17px 23px;
+		}
+	}
+
+	&__banner-icon {
+		margin-right: 24px;
+		display: flex;
+		align-items: center;
+		svg {
+			width: 32px;
+			height: 32px;
+			@include media($xs) {
+				width: 18px;
+				height: 18px;
+			}
+		}
+		@include media($xs) {
+			margin-right: 16px;
+		}
+	}
+
+	&__banner-text {
+	}
+
+	&__img {
+		max-width: 276px;
+		width: 100%;
+		display: block;
+		@include media($sm) {
+			max-width: 200px;
+		}
+		@include media($xs) {
+			position: absolute;
+			top: 0;
+			right: -30px;
+			z-index: -1;
+			max-width: 168px;
+		}
+	}
+}

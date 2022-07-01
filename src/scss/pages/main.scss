@@ -1,0 +1,66 @@
+.main {
+	overflow: hidden;
+	padding-top: 60px;
+	&__banner {
+		padding: 139px 0 218px;
+		@include media($md) {
+			padding: 100px 0 180;
+		}
+		@include media($sm) {
+			padding: 50px 0 100;
+		}
+		@include media($xs) {
+			padding: 15px 0 54px;
+		}
+	}
+	&__about-section {
+		padding: 0 0 242px;
+		@include media($xs) {
+			padding: 50px 0 0;
+		}
+	}
+	&__improve-section {
+		padding: 128px 0 42px;
+		@include media($md) {
+			padding: 70px 0 30px;
+		}
+		@include media($sm) {
+			padding: 23px 0 24px;
+		}
+	}
+	&__fact-section {
+		margin: 24px 0 30px;
+		@include media($md) {
+			margin: 18px 0 30px;
+		}
+		@include media($sm) {
+			margin: 0px 0 30px;
+		}
+	}
+	&__skills-section {
+		padding: 25px 0 42px;
+		@include media($sm) {
+			padding: 10px 0 46px;
+		}
+	}
+	&__usable-section {
+		padding: 38px 0 43px;
+		@include media($sm) {
+			padding: 29px 0 17px;
+		}
+	}
+	&__clients-section {
+		padding: 93px 0 59px;
+		@include media($sm) {
+			padding: 37px 0 34px;
+		}
+
+	}
+	&__action-section {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 22;
+	}
+}

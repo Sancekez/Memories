@@ -1,0 +1,156 @@
+html {
+	height: 100%;
+	//overflow-x: hidden;
+	&.overflow {
+		overflow: hidden;
+	}
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	color: $baseFClr;
+	font: 400 22px/35px $baseFF;
+	min-height: 100%;
+	position: relative;
+	//overflow-x: hidden;
+	//overflow-y: auto;
+
+	/* &.checkout-page {
+		overflow: visible;
+	} */
+	@include media($sm) {
+		font: 400 18px/30px $baseFF;
+	}
+	@include media($xs) {
+		font: 400 15px/23px $baseFF;
+	}
+	&.overflow {
+		overflow: hidden;
+		&:after {
+			content: "";
+			display: block;
+			background: $black;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 9;
+			opacity: 0.25;
+		}
+	}
+
+	// @include media($md) {
+	// 	font: $fs-16;
+	// }
+	// @include media($xs) {
+	// 	font: $fs-14;
+	// }
+
+	*::selection {
+		background: $red; /* Safari */
+		color: $white;
+	}
+	*::-moz-selection {
+		// background: $red; /* Firefox */
+		// color: $white;
+	}
+}
+
+.ui-helper-hidden-accessible {
+	display: none;
+}
+
+input {
+	border-radius: 0;
+	-webkit-appearance: none;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.slick-slider *,
+input,
+button,
+a:focus,
+a:hover {
+	outline: none !important;
+}
+* {
+	-webkit-locale: auto;
+	box-sizing: border-box;
+}
+*:after,
+*:before,
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix {
+	&:after {
+		content: "";
+		display: table;
+		width: 100%;
+		clear: both;
+	}
+}
+.container {
+	padding-left: $containerP;
+	padding-right: $containerP;
+	max-width: $containerW;
+	margin-left: auto;
+	margin-right: auto;
+
+	// @include media($md) {
+	// 	max-width: 970px;
+	// }
+	// @include media($sm) {
+	// 	max-width: 730px;
+	// }
+
+	// &.container-fluid {
+	// 	max-width: 100%;
+	// }
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: $baseFClr;
+}
+.lazy {
+	@include time(0.7s);
+	opacity: 0;
+
+	&.lz-entered,
+	&.lz-loading,
+	&.lz-loaded {
+		opacity: 1;
+	}
+}
+.overflow-is-active {
+	&::after {
+		position: absolute;
+		display: block;
+		content: "";
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(45, 45, 60, 0.27);
+	}
+}

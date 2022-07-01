@@ -1,0 +1,51 @@
+.about-section {
+	// margin: 0;
+	position: relative;
+	@include media($xs) {
+		padding: 48px 0 16px;
+	}
+	&__info {
+	}
+	&__title {
+		margin-bottom: 26px;
+	}
+
+	&__slogan {
+		margin-bottom: 26px;
+		@include media($md) {
+			text-align: center;
+		}
+	}
+
+	&__text {
+		@include media($xs) {
+			line-height: 28px;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		object-fit: contain;
+		&-lg {
+			display: block;
+			position: absolute;
+			padding: 0 15px;
+			left: 0;
+			bottom: 0;
+			@include media($xs) {
+				display: none;
+			}
+		}
+		&-sm {
+			padding: 0 15px;
+			margin: 0 auto;
+			display: none;
+			max-width: 400px;
+			position: relative;
+			@include media($xs) {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}

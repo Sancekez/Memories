@@ -1,0 +1,26 @@
+.haeder {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	height: 64px;
+	z-index: 10;
+	max-width: $containerW;
+	margin: 0 auto;
+	padding: 0 15px;
+	background-color: $white;
+	padding: 0 15px;
+	@include media($sm) {
+		height: 56px;
+	}
+	&__logo {
+		svg {
+			fill: $logo-color;
+			width: 87px;
+			height: 14px;
+		}
+		@include media($xs) {
+			margin-left: 10px;
+		}
+	}
+}

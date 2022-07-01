@@ -1,0 +1,27 @@
+.banner-section {
+	@include flex();
+	flex-wrap: nowrap;
+
+	@include media($sm) {
+		flex-direction: column;
+	}
+	&__info {
+		@include media($sm) {
+			margin-bottom: 54px;
+		}
+	}
+
+	&__title {
+		span {
+			color: $blue;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		max-width: 515px;
+		object-fit: contain;
+		margin: 0 auto;
+	}
+}

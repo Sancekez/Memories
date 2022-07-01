@@ -1,0 +1,61 @@
+//include normalize
+@import "libs/normalize";
+//include fonts
+@import "partials/fonts";
+//include sprite-svg
+@import "partials/sprite-svg";
+//include variables
+@import "helpers/variables";
+// include functions
+@import "helpers/functions";
+
+@import "helpers/breakpoints";
+@import "helpers/grid-framework";
+@import "helpers/grid";
+
+// include mixin
+@import "helpers/mixin";
+/* Ссылки
+-----------------------------*/
+// @import "partials/link";
+// @import "partials/icons";
+@import "partials/slick";
+@import "partials/buttons";
+@import "partials/titles";
+@import "partials/base";
+@import "partials/grid";
+@import "partials/fancybox";
+
+/* Сетка
+-----------------------------*/
+//@import "partials/grid";
+
+/* blocks
+-----------------------------*/
+@import "blocks/nav-block";
+@import "blocks/burger-menu";
+@import "blocks/slogan-block";
+@import "blocks/slider-block";
+@import "blocks/review-block";
+@import "blocks/stars-block";
+@import "blocks/vide-block";
+@import "blocks/user-block";
+
+
+// sections
+
+@import "sections/banner-section";
+@import "sections/header";
+@import "sections/about-section";
+@import "sections/improve-section";
+@import "sections/fact-section";
+@import "sections/skills-section";
+@import "sections/quality-section";
+@import "sections/usable-section";
+@import "sections/clients-section";
+@import "sections/action-section";
+
+
+// pages
+
+@import "pages/main.scss";

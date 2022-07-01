@@ -1,0 +1,131 @@
+$title-h1: 700 44px/58px $titleFF; //new
+$title-h2: 600 36px/48px $titleFF;
+$title-h3: 600 30px/36px $titleFF; // ?
+$title-h4: bold 32px/40px $titleFF; //new
+$title-h5: bold 26px/1.2 $titleFF;
+$title-h6: bold 22px/1.4 $titleFF;
+
+$title-h1-lg: 700 37px/45px $titleFF;
+$title-h2-lg: 600 32px/50px $titleFF;
+// $title-h3-lg: bold 40px/1.2 $titleFF; // ?
+// $title-h4-lg: bold 32px/40px $titleFF; //new
+// $title-h5-lg: bold 26px/1.2 $titleFF;
+// $title-h6-lg: bold 22px/1.4 $titleFF;
+
+$title-h1-sm: 700 35px/40px $titleFF; //new
+$title-h2-sm: 600 29px/30px $titleFF;
+$title-h3-sm: 600 25px/30px $titleFF; // ?
+$title-h4-sm: 700 26px/36px $titleFF; //new
+$title-h5-sm: bold 22px/30px $titleFF; // ?
+$title-h6-sm: bold 18px/26px $titleFF;
+
+$title-h1-xs: 700 28px/38px $titleFF; //new
+$title-h2-xs: 600 24px/32px  $titleFF; // ?
+$title-h3-xs: 600 18px/21px $titleFF; //new
+$title-h4-xs: 700 22px/30px $titleFF; //new
+$title-h5-xs: bold 18px/26px $titleFF; // ?
+$title-h6-xs: bold 16px/22px $titleFF; // ?
+
+$title-color: inherit;
+
+h1,
+.title-h1 {
+	font: $title-h1;
+	margin: 0 0 36px 0;
+
+	@include media($md) {
+		font: $title-h1-lg;
+	}
+	@include media($md) {
+		font: $title-h1-sm;
+	}
+	@include media($xs) {
+		margin: 0 0 21px 0;
+		font: $title-h1-xs;
+	}
+}
+h2,
+.title-h2 {
+	font: $title-h2;
+	margin: 0 0 34px 0;
+
+	@include media($md) {
+		//font: $title-h2-lg;
+		margin: 0 0 30px 0;
+	}
+	@include media($md) {
+		font: $title-h2-sm;
+	}
+	@include media($sm) {
+		margin: 0 0 21px 0;
+	}
+	@include media($xs) {
+		margin: 0 0 16px 0;
+		font: $title-h2-xs;
+	}
+}
+h3,
+.title-h3 {
+	font: $title-h3;
+	//color: $title-color;
+	margin: 0 0 11px 0;
+
+	@include media($lg) {
+		//font: $title-h3-lg;
+	}
+	@include media($md) {
+		font: $title-h3-sm;
+	}
+	@include media($xs) {
+		margin: 0 0 4px 0;
+		font: $title-h3-xs;
+	}
+}
+h4,
+.title-h4 {
+	font: $title-h4;
+	//color: $title-color;
+	margin: 0 0 16px 0;
+
+	@include media($lg) {
+		//font: $title-h4-lg; margin-bottom: 20px;
+	}
+	@include media($md) {
+		font: $title-h4-sm;
+	}
+	@include media($xs) {
+		font: $title-h4-xs;
+	}
+}
+h5,
+.title-h5 {
+	font: $title-h5;
+	//color: $title-color;
+	margin: 0 0 16px 0;
+
+	@include media($lg) {
+		//font: $title-h5-lg;
+	}
+	@include media($md) {
+		font: $title-h5-sm;
+	}
+	@include media($xs) {
+		font: $title-h5-xs;
+	}
+}
+
+.title-h6 {
+	font: $title-h6;
+	//color: $title-color;
+	margin: 0 0 16px 0;
+
+	@include media($lg) {
+		//font: $title-h5-lg;
+	}
+	@include media($md) {
+		font: $title-h6-sm;
+	}
+	@include media($xs) {
+		font: $title-h6-xs;
+	}
+}

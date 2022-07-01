@@ -1,0 +1,42 @@
+.stars-block {
+	@include flex(0, center, center);
+	&__star {
+		width: 23px;
+		height: 23px;
+		margin-right: 4px;
+		&:last-child {
+			margin-right: 0;
+		}
+		svg {
+			fill: #c9c9c9;
+			width: 23px;
+			height: 23px;
+		}
+		@include media($xs) {
+			width: 15px;
+			height: 15px;
+			svg {
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+	&--4 & {
+		&__star {
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4) {
+				svg {
+					fill: #ffb23e;
+				}
+			}
+		}
+	}
+	&--xs {
+		display: none;
+		@include media($xs) {
+			display: flex;
+		}
+	}
+}

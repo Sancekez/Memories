@@ -1,0 +1,20 @@
+{
+	"name": "adamov",
+	"description": "layout task",
+	"main": "gulpfile.js",
+	"authors": [
+		"prixodik"
+	],
+	"license": "ISC",
+	"homepage": "",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"vanilla-lazyload": "^17.3.0",
+	}
+}

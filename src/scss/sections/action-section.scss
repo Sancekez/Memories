@@ -1,0 +1,141 @@
+.action-section {
+	height: 60px;
+	background-color: $orange;
+	padding: 6px 0;
+	display: flex;
+	align-items: center;
+	&__container {
+		width: 100%;
+	}
+
+	&__wrap {
+		position: relative;
+		@include flex(space-between, center, center);
+	}
+	&__decor {
+		position: absolute;
+		bottom: -7px;
+		background: url("../../img/lights.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		@include media($sm) {
+			bottom: -11px;
+			background-size: 140px;
+			object-fit: cover;
+		}
+		@include media($xs) {
+			width: 35px;
+			height: 35px;
+		}
+
+		&--mod-2 {
+			left: 26%;
+			z-index: -1;
+			@include media($xs) {
+				left: auto;
+				right: -4%;
+				transform: rotate(-85deg);
+			}
+		}
+		&--mod-1 {
+			right: 18%;
+			z-index: -1;
+			@include media($sm) {
+				background: none;
+			}
+			@include media($xs) {
+
+				right: auto;
+				left: 30%;
+			}
+		}
+	}
+	&__sail {
+		@include flex(0, center, center);
+		position: relative;
+		padding-left: 100px;
+		@include media($xs) {
+			padding-left: 0;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&-img {
+			width: 68px;
+			height: 51px;
+			display: block;
+			position: absolute;
+			bottom: -18px;
+			left: 0;
+			@include media($xs) {
+				display: none;
+			}
+		}
+		&-title {
+			font: 600 20px/26px $baseFF;
+			color: $white;
+			@include media($sm) {
+				font: 600 16px/18px $baseFF;
+			}
+		}
+		&-days {
+			display: none;
+			font: 600 12px/16px $baseFF;
+			color: $white;
+			@include media($xs) {
+				display: block;
+			}
+		}
+	}
+
+	&__time {
+		@include flex(0, center, center);
+		font: 600 20px/26px $baseFF;
+		color: $white;
+		@include media($sm) {
+			font: 600 18px/24px $baseFF;
+		}
+		&-days {
+			span {
+				display: flex;
+				align-items: center;
+				@include media($xs) {
+					display: none;
+				}
+			}
+			#js-days {
+				margin: 0 6px;
+				background: rgba(255, 255, 255, 0.3);
+				border-radius: 6px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 3px 5px;
+			}
+		}
+		&-clock {
+			margin-left: 35px;
+			background: rgba(255, 255, 255, 0.3);
+			border-radius: 6px;
+			padding: 5px 8px;
+			display: flex;
+			align-items: flex-end;
+			@include media($xs) {
+				margin: 0;
+				background: none;
+			}
+			span {
+				margin: 0 2px;
+				&:last-child {
+					margin-right: 0;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		position: relative;
+	}
+}

@@ -1,0 +1,157 @@
+.quality-section {
+	border-top: 1px solid $border;
+	border-bottom: 2px solid $border;
+	padding: 25px 40px 25px 0;
+	@include flex(space-between, center, center);
+	@include media($sm) {
+		@include flex(center, center, center, 0, column);
+		padding-right: 0;
+	}
+	@include media($xs) {
+		padding: 18px 0;
+	}
+	&__info {
+		flex: 1 1 auto;
+		@include media($sm) {
+			order: 2;
+		}
+	}
+
+	&__slogan {
+		margin-right: 29px;
+		font: 600 20px/24px $baseFF;
+		@include media($sm) {
+			width: 100%;
+			text-align: center;
+			margin-right: 0;
+			margin-bottom: 26px;
+		}
+		@include media($xs) {
+			font: 600 12px/14px $baseFF;
+		}
+	}
+
+	&__score {
+		max-width: 425px;
+		@include media($sm) {
+			max-width: 100%;
+		}
+	}
+
+	&__score-items {
+		@include flex(0, center, center);
+	}
+
+	&__score-icon {
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+		svg {
+			width: 19px;
+			height: 19px;
+			fill: $grey;
+			@include media($xs) {
+				width: 13px;
+				height: 13px;
+			}
+		}
+	}
+
+	&__score-title {
+		margin-right: 18px;
+		color: $green;
+		font: 600 20px/24px $baseFF;
+		@include media($xs) {
+			margin-right: 8px;
+			font: 600 16px/19px $baseFF;
+		}
+	}
+
+	&__score-count {
+		font: 400 16px/19px $baseFF;
+		color: $grey-light;
+		@include media($xs) {
+			font: 400 14px/16px $baseFF;
+		}
+
+		span {
+			color: $text-color;
+			font: 600 18px/21px $baseFF;
+			@include media($xs) {
+				font: 600 14px/16px $baseFF;
+			}
+		}
+	}
+
+	&__score-subtitle {
+		text-align: center;
+		margin-top: 8px;
+		font: 400 16px/19px $baseFF;
+		color: $grey-light;
+		@include media($xs) {
+			font: 400 12px/14px $baseFF;
+		}
+	}
+
+	&__speed {
+		position: relative;
+		width: 123px;
+		height: 74px;
+
+		&.animation-is-active {
+			.quality-section__speed-arrow {
+				svg {
+					animation: 3s linear rotate;
+					animation-fill-mode: forwards;
+				}
+			}
+		}
+		@include media($sm) {
+			margin-bottom: 20px;
+		}
+		@include media($xs) {
+			width: 81px;
+			height: 49px;
+		}
+	}
+
+	&__speed-panel svg {
+		@include media($xs) {
+			width: 81px;
+			height: 49px;
+		}
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	&__speed-arrow {
+		transform: translate(-50%, 50%);
+		position: absolute;
+		bottom: 12px;
+		left: calc(123px - 32px);
+		@include media($xs) {
+			bottom: 8px;
+			left: calc(81px - 21px);
+		}
+		svg {
+			width: 75px;
+			transform-origin: 9px 9px;
+			@include media($xs) {
+				width: 49px;
+				height: 12px;
+				transform-origin: 6px 6px;
+			}
+		}
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-185deg);
+	}
+}

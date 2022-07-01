@@ -1,0 +1,11 @@
+.clients-section {
+	&__title {
+		margin-bottom: 57px;
+		@include media($sm) {
+			margin-bottom: 41px;
+		}
+		@include media($xs) {
+			margin-bottom: 21px;
+		}
+	}
+}

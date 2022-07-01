@@ -1,0 +1,91 @@
+.btn {
+	border: 0;
+	color: $white;
+	font: 500 16px/22px $baseFF;
+	background: $blue;
+	border-radius: 6px;
+	padding: 17px 55px;
+	color: $white;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-transform: none;
+	text-decoration: none;
+	border-radius: 61px;
+	transition: all 0.3s;
+	min-width: 229px;
+	@include media($sm) {
+		padding: 9px 22px;
+		font: 500 14px/18px $baseFF;
+		min-width: 163px;
+	}
+
+	svg {
+		fill: $white;
+		@include time();
+	}
+
+	&:hover,
+	&:active {
+		/* border-color: #fcbc17;
+		background: #fcbc17; */
+		color: $white;
+
+		/* svg {
+			fill: $blue-dark;
+		} */
+	}
+
+	&:focus {
+		outline: none; /* background: inherit; border-color: inherit; color: inherit;  */
+	}
+
+	&--disabled,
+	&:disabled,
+	&[disabled],
+	&:disabled:focus {
+		/* background: $icon-bg-directory;
+		border-color: $icon-bg-directory;
+		color: $blue-dark; */
+		opacity: 0.4;
+		pointer-events: none;
+	}
+
+	@include media($lg) {
+	}
+
+	@include media($md) {
+	}
+
+	@include media($sm) {
+	}
+
+	@include media($xs) {
+	}
+	&--blue {
+		background-color: $blue;
+		&:hover {
+			background-color: $blue-hover;
+			transition: all 0.3s;
+		}
+	}
+	&--sm {
+		min-width: 0;
+		padding: 12px 40px;
+		@include media($sm) {
+			padding: 9px 20px;
+		}
+	}
+	&--yellow {
+		background-color: $yellow;
+		color: $text-dark;
+		&:hover {
+			background-color: $yellow-hover;
+			transition: all 0.3s;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.skills-section {
+	&__title {
+		letter-spacing: 1px;
+	}
+
+	&__items {
+		gap: 12px 0;
+		@include media($xs) {
+			gap: 6px 0;
+		}
+	}
+
+	&__wrap {
+		@include flex(0,center,center,nowrap);
+		background-color: $bg-grey;
+		padding: 24px 38px;
+		border-radius: 17px;
+		@include media($xs) {
+			padding: 16px 23px;
+		}
+	}
+	&__item-icon {
+		svg {
+			stroke: $text-color;
+			@include media($xs) {
+				width: 24px
+			}
+		}
+		@include flex(0,center,center);
+		margin-right: 16px;
+	}
+	
+
+	&__item-title {
+		letter-spacing: 1px;
+	}
+}

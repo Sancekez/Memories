@@ -1,0 +1,39 @@
+.slider-block {
+	margin: 0 -7.5px;
+	position: relative;
+	&__arrows {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		align-items: center;
+		bottom: 4px;
+		max-width: 133px;
+		width: 100%;
+		left: calc(50% - 66px);
+		@include media($xs) {
+			max-width: 123px;
+			bottom: 3px;
+			left: calc(50% - 62px);
+		}
+		button {
+			position: relative;
+			display: flex;
+			align-items: center;
+		}
+		svg {
+			@include media($xs) {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+	.slick-list {
+		margin-bottom: 42px;
+		@include media($md) {
+			margin-bottom: 30px;
+		}
+		@include media($xs) {
+			margin-bottom: 24px;
+		}
+	}
+}

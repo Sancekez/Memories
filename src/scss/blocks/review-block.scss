@@ -1,0 +1,35 @@
+.review-block {
+	background-color: $bg-grey;
+	padding: 28px 27px;
+	height: 325px;
+	border-radius: 16px;
+	@include media($xs) {
+		height: 259px;
+	}
+	&__head {
+		@include flex(space-between,center,center);
+		margin-bottom: 18px;
+		@include media($xs) {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__text {
+		font: 400 18px/29px $baseFF;
+		@include media($xs) {
+			font: 400 15px/24px $baseFF;
+		}
+	}
+
+	&__user-stars {
+		@include media($xs) {
+			.stars-block {
+				display: none;
+			}
+			.stars-block--xs {
+				margin-top: 12px;
+				display: flex;
+			}
+		}
+	}
+}
