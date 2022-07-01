@@ -4,11 +4,17 @@
 	padding: 25px 40px 25px 0;
 	@include flex(space-between, center, center);
 	@include media($sm) {
-		@include flex(center, center, center, 0, column);
 		padding-right: 0;
 	}
 	@include media($xs) {
 		padding: 18px 0;
+	}
+	&__container {
+		width: 100%;
+		@include flex(space-between,center,center);
+		@include media($sm) {
+			@include flex(center, center, center, 0, column);
+		}
 	}
 	&__info {
 		flex: 1 1 auto;
