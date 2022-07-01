@@ -13,12 +13,11 @@ $(document).ready(function () {
 		$(this).toggleClass('is-active').next().toggleClass('is-active');
 		if ($("#js-burger-menu").hasClass("is-active")) {
 			$("#js-nav-menu").addClass('is-active')
-			$(".js-overflow").addClass('overflow-is-active')
+			// $(".js-overflow").addClass('overflow-is-active')
 			$("html").addClass('overflow')
 
 		} else {
 			$("#js-nav-menu").removeClass('is-active')
-			$(".js-overflow").removeClass('overflow-is-active')
 			$("html").removeClass('overflow')
 		}
 	});
@@ -26,7 +25,7 @@ $(document).ready(function () {
 		if (e.target.closest(".js-nav-link")) {
 			$("#js-nav-menu").removeClass('is-active');
 			$("#js-burger-menu").removeClass('is-active');
-			$(".js-overflow").removeClass('overflow-is-active')
+			$("html").removeClass('overflow')
 		}
 	});
 
