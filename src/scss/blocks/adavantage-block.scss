@@ -1,0 +1,94 @@
+.adavantage-block {
+	@include flex(space-between, 0, 0, 0, column);
+	text-align: center;
+	min-height: 560px;
+	border-radius: 24px;
+	padding: 55px 41px 31px;
+	color: $white;
+
+	@include media($sm) {
+		min-height: 325px;
+		padding: 22px 21px 25px;
+	}
+
+	&--blue {
+		background-color: #3e3be7;
+	}
+	&--orange {
+		background-color: #ff7a55;
+	}
+	&--blue-dark {
+		background-color: #312faa;
+	}
+	&--grey {
+		background-color: #262626;
+	}
+	&--green {
+		background-color: #41a273;
+	}
+
+	&__img {
+		@include flex(center, center, center);
+		margin: 0 0 22px;
+		height: 203px;
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+			display: block;
+		}
+
+		@include media($sm) {
+			height: 140px;
+			margin-bottom: 27px;
+		}
+	}
+
+	&__title {
+	}
+
+	&__text {
+		@include media($sm) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__link {
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+		width: fit-content;
+
+		span {
+			color: $white;
+			font-size: 19px;
+			margin-right: 15px;
+			@include media($sm) {
+				margin-right: 6px;
+				font: 500 14px/22px $baseFF;
+			}
+		}
+		svg {
+			width: 7px;
+			height: 14px;
+			fill: $white;
+
+			@include media($sm) {
+				width: 5px;
+				height: 10px;
+			}
+		}
+	}
+
+	&--mode & {
+		&__text {
+			margin-bottom: 0;
+		}
+		&__info {
+			@include media($xs) {
+				margin-top: 13px;
+			}
+		}
+	}
+}

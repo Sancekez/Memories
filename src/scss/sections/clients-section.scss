@@ -8,4 +8,9 @@
 			margin-bottom: 21px;
 		}
 	}
+	&__slider {
+		.slick-list {
+			overflow: visible;
+		}
+	}
 }

@@ -12,6 +12,8 @@
 
 	&__subtitle {
 		margin-bottom: 19px;
+		/* font: 22px/46px $baseFF; */
+
 		@include media($xs) {
 			max-width: 221px;
 			margin-bottom: 16px;
@@ -37,6 +39,9 @@
 		svg {
 			width: 32px;
 			height: 32px;
+			fill: none;
+			stroke: #000;
+
 			@include media($xs) {
 				width: 18px;
 				height: 18px;

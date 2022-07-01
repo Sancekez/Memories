@@ -2,17 +2,20 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	white-space: inherit;
+	/* white-space: inherit; */
 	border: 1px solid $text-color;
 	border-radius: 32px;
 	padding: 7px 28px;
 	font: 600 23px/28px $baseFF;
 	letter-spacing: 0.6px;
+	text-align: center;
 
 	@include media($md) {
 		font: 600 21px/24px $baseFF;
+		padding: 7px 24px;
 	}
 	@include media($sm) {
 		font: 600 16px/19px $baseFF;
+		padding: 7px 20px;
 	}
 }

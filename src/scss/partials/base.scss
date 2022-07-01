@@ -29,11 +29,14 @@ body {
 	/* &.checkout-page {
 		overflow: visible;
 	} */
+	@include media($md) {
+		font: 20px/30px $baseFF;
+	}
 	@include media($sm) {
-		font: 400 18px/30px $baseFF;
+		font: 400 18px/26px $baseFF;
 	}
 	@include media($xs) {
-		font: 400 15px/23px $baseFF;
+		font: 400 15px/1.6 $baseFF;
 	}
 	&.overflow {
 		overflow: hidden;

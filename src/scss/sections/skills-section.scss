@@ -1,6 +1,10 @@
 .skills-section {
 	&__title {
 		margin-bottom: 34px;
+
+		@include media($xs) {
+			margin-bottom: 16px;
+		}
 	}
 
 	&__items {
@@ -39,6 +43,14 @@
 		&-title {
 			/* letter-spacing: 1px; */
 			font: 22px/35px $baseFF;
+
+			@include media($md) {
+				font: 20px/32px $baseFF;
+			}
+
+			@include media($xs) {
+				font: 15px/1.6 $baseFF;
+			}
 		}
 	}
 }

@@ -33,13 +33,12 @@ $(document).ready(function () {
 	});
 
 	// burger menu
-	$("#js-burger-menu").click(function () {
+	$(".js-burger-menu").click(function () {
 		$(this).toggleClass('is-active').next().toggleClass('is-active');
-		if ($("#js-burger-menu").hasClass("is-active")) {
+		if ($(this).hasClass("is-active")) {
 			$("#js-nav-menu").addClass('is-active')
 			// $(".js-overflow").addClass('overflow-is-active')
 			$("html").addClass('overflow')
-
 		} else {
 			$("#js-nav-menu").removeClass('is-active')
 			$("html").removeClass('overflow')
@@ -53,9 +52,9 @@ $(document).ready(function () {
 	// 	}
 	// });
 
-	$(document).mouseup( function(e){ // событие клика по веб-документу
-		var div = $( "#js-nav-menu" ); // тут указываем ID элемента
-		if ( !div.is(e.target) && $("#js-nav-menu").hasClass('is-active')) { // и не по его дочерним элементам
+	$(document).mouseup(function (e) { // событие клика по веб-документу
+		var div = $("#js-nav-menu"); // тут указываем ID элемента
+		if (!div.is(e.target) && $("#js-nav-menu").hasClass('is-active')) { // и не по его дочерним элементам
 			$("#js-nav-menu").removeClass('is-active');
 			$("#js-burger-menu").removeClass('is-active');
 			$("html").removeClass('overflow')
@@ -191,7 +190,7 @@ $(document).ready(function () {
 	}
 
 
-	
+
 
 
 

@@ -9,8 +9,8 @@
 		display: grid;
 		grid-gap: 32px 0;
 		width: 100%;
-		color: $white;
-		&-bg {
+		/* color: $white; */
+		/* &-bg {
 			@include flex(space-between, 0, 0, 0, column);
 			text-align: center;
 			min-height: 560px;
@@ -35,61 +35,6 @@
 			&--green {
 				background-color: #41a273;
 			}
-		}
-	}
-
-	&__item-img {
-		display: block;
-		margin: 0 auto 22px;
-		max-height: 203px;
-		@include media($sm) {
-			max-height: 140px;
-			margin-bottom: 27px;
-		}
-	}
-
-	&__item-title {
-	}
-
-	&__item-text {
-		@include media($sm) {
-			margin-bottom: 15px;
-		}
-	}
-
-	&__item-link {
-		display: flex;
-		margin: 0 auto;
-		align-items: center;
-		width: fit-content;
-		span {
-			color: $white;
-			font-size: 19px;
-			margin-right: 15px;
-			@include media($sm) {
-				margin-right: 6px;
-				font: 500 14px/22px $baseFF;
-			}
-		}
-		svg {
-			width: 7px;
-			height: 14px;
-			@include media($sm) {
-				width: 5px;
-				height: 10px;
-			}
-		}
-	}
-	&--mode & {
-		&__item {
-			&-text {
-				margin-bottom: 0;
-			}
-			&-info {
-				@include media($xs) {
-					margin-top: 13px;
-				}
-			}
-		}
+		} */
 	}
 }

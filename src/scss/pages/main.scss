@@ -1,29 +1,27 @@
 .main {
 	overflow-x: hidden;
 	padding-top: 60px;
+
 	@include media($sm) {
-		padding-top: 70px;
+		padding-top: 80px;
 	}
+
 	&__banner {
 		padding: 139px 0 218px;
 		@include media($md) {
-			padding: 100px 0 180;
+			padding: 100px 0 180px;
 		}
 		@include media($sm) {
-			padding: 50px 0 100;
+			padding: 50px 0 100px;
 		}
 		@include media($xs) {
 			padding: 15px 0 54px;
 		}
 	}
 	&__about-section {
-		padding: 0 0 242px;
-		@include media($xs) {
-			padding: 50px 0 0;
-		}
 	}
 	&__improve-section {
-		padding: 128px 0 42px;
+		padding: 110px 0 42px;
 		@include media($md) {
 			padding: 70px 0 30px;
 		}
@@ -32,7 +30,8 @@
 		}
 	}
 	&__fact-section {
-		margin: 24px 0 30px;
+		margin: 24px 0;
+
 		@include media($md) {
 			margin: 18px 0 30px;
 		}

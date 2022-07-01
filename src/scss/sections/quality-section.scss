@@ -1,7 +1,7 @@
 .quality-section {
 	border-top: 1px solid $border;
 	border-bottom: 2px solid $border;
-	padding: 25px 40px 25px 0;
+	padding: 25px 0;
 	@include flex(space-between, center, center);
 	@include media($sm) {
 		padding-right: 0;
@@ -11,7 +11,7 @@
 	}
 	&__container {
 		width: 100%;
-		@include flex(space-between,center,center);
+		@include flex(space-between, center, center);
 		@include media($sm) {
 			@include flex(center, center, center, 0, column);
 		}
@@ -103,10 +103,11 @@
 		position: relative;
 		width: 123px;
 		height: 74px;
+		margin-right: 30px;
 
 		&.animation-is-active {
 			.quality-section__speed-arrow {
-				svg {
+				img {
 					animation: 3s linear rotate;
 					animation-fill-mode: forwards;
 				}
@@ -114,10 +115,12 @@
 		}
 		@include media($sm) {
 			margin-bottom: 20px;
+			margin-right: 0;
 		}
 		@include media($xs) {
 			width: 81px;
 			height: 49px;
+			margin-right: 0;
 		}
 	}
 
@@ -136,15 +139,18 @@
 		position: absolute;
 		bottom: 12px;
 		left: calc(123px - 32px);
+		width: 76px;
 		@include media($xs) {
 			bottom: 8px;
 			left: calc(81px - 21px);
+			width: 50px;
 		}
-		svg {
-			width: 75px;
+		img {
+			width: 76px;
 			transform-origin: 9px 9px;
+
 			@include media($xs) {
-				width: 49px;
+				width: 50px;
 				height: 12px;
 				transform-origin: 6px 6px;
 			}
@@ -155,7 +161,6 @@
 @keyframes rotate {
 	from {
 		transform: rotate(-185deg);
-		
 	}
 
 	to {

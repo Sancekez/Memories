@@ -4,12 +4,18 @@
 	/* max-width: 1150px;
 	padding: 0 15px;
 	margin: 0 auto; */
+
 	@include media($xs) {
 		padding: 48px 0 16px;
 	}
 
 	&__container {
 		position: relative;
+		padding-bottom: 242px;
+
+		@include media($xs) {
+			padding-bottom: 0;
+		}
 	}
 	&__info {
 	}
@@ -34,18 +40,19 @@
 
 	&__img {
 		img {
-			width: 100%;
-			// object-fit: contain;
+			max-width: none;
 			display: block;
 			position: absolute;
-			/* padding: 0 15px; */
 			right: 15px;
-			bottom: 15px;
+			bottom: 18px;
 
+			@include media($md) {
+				max-width: 100%;
+			}
 			@include media($xs) {
 				max-width: 400px;
 				display: block;
-				position: relative;
+				position: static;
 				width: 100%;
 			}
 		}

@@ -10,6 +10,10 @@
 		@include flex(space-between, center, center);
 		padding: 31px 0 22px;
 		border-bottom: 1px solid $border;
+
+		@include media($xs) {
+			padding: 16px 0 20px;
+		}
 	}
 
 	&__logo {
@@ -32,14 +36,16 @@
 		margin-right: 29px;
 		font: 400 16px/19px $baseFF;
 		color: $burger-color;
+
 		@include media($sm) {
 			border-top: 1px solid $border;
 			order: 3;
 			width: 100%;
-			padding-top: 10px;
+			padding-top: 16px;
 			margin-top: 19px;
 			margin-right: 0;
 		}
+
 		a {
 			font-weight: 500;
 			margin-left: 6px;
@@ -68,9 +74,12 @@
 	&__links {
 		@include flex(0, center, center);
 		font: 500 16px/21px $baseFF2;
+
 		@include media($sm) {
 			flex-direction: column;
 			padding-bottom: 23px;
+			font-size: 15px;
+			line-height: 1.3;
 		}
 	}
 
@@ -87,7 +96,7 @@
 			margin-right: 0;
 			margin-bottom: 24px;
 			&:last-child {
-				margin-bottom: 0
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -97,17 +106,17 @@
 		@include media($sm) {
 			width: 100%;
 			flex-direction: row-reverse;
-			border-top:  1px solid $border;
+			border-top: 1px solid $border;
 			padding-top: 20px;
 		}
 	}
 
 	&__cards {
-		@include flex(center,center,center,nowrap);
+		@include flex(center, center, center, nowrap);
 	}
 
 	&__pay {
-		@include flex(0,center,center);
+		@include flex(0, center, center);
 		height: 31px;
 		margin-right: 18px;
 		&:last-child {
@@ -121,7 +130,6 @@
 		margin-left: 23px;
 		@include media($sm) {
 			margin-left: 0;
-			
 		}
 	}
 }
