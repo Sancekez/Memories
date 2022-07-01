@@ -1,20 +1,31 @@
 .action-banner-section {
-	@include flex(0,center,center,nowrap);
+	@include flex(0, center, center, nowrap);
 	background-color: $blue;
 	border-radius: 24px;
 	position: relative;
-	padding: 62px 43px 0 65px;
+	padding: 62px 0 44px 70px;
+	overflow: hidden;
 	&::after {
 		position: absolute;
 		top: 33px;
-		left: 0;
+		left: calc(50% - 133px);
 		content: "";
 		display: block;
 		width: 266px;
 		height: 8px;
 		background-color: #615eeb;
 		border-radius: 4px;
-		transform: translateX(150%);
+		transform: translateX(calc(50% - 133px));
+		@include media($sm) {
+			left: calc(50% - 71px);
+			transform: translateX(calc(50% - 71px));
+			top: 22px;
+			width: 143px;
+		}
+	}
+
+	@include media($sm) {
+		padding: 43px 28px 175px 28px;
 	}
 
 	&__info {
@@ -22,46 +33,143 @@
 	}
 
 	&__title {
+		max-width: 545px;
+		@include media($sm) {
+			font: 600 20px/26px $baseFF;
+			margin-bottom: 22px;
+		}
 	}
 
 	&__price {
-		@include flex(0,center,center);
-	}
-
-	&__price-new {
-		font: 800 40px/54px $baseFF2;
-	}
-
-	&__price-old {
+		@include flex(0, center, center);
+		&-old {
+			color: rgba(255, 255, 255, 0.6);
+			font: 500 32px/44px $baseFF2;
+			@include media($sm) {
+				font: 500 22px/30px $baseFF2;
+			}
+		}
+		&-new {
+			font: 800 40px/54px $baseFF2;
+			margin-right: 13px;
+			@include media($sm) {
+				font: 800 26px/35px $baseFF2;
+			}
+		}
 	}
 
 	&__sail {
-	}
-
-	&__sail-count {
+		@include flex(0, center, center);
+		font: 500 20px/27px $baseFF2;
+		@include media($sm) {
+			margin-top: 4px;
+			font: 500 16px/21px $baseFF2;
+		}
+		&-count {
+			margin-left: 15px;
+			background-color: #fff;
+			background: rgba(255, 255, 255, 0.2);
+			border-radius: 8px;
+			padding: 3px 8px;
+		}
 	}
 
 	&__time {
-	}
-
-	&__time-icon {
+		margin: 36px 0 25px;
+		@include flex(0, center, center);
+		color: rgba(255, 255, 255, 0.7);
+		font: 500 20px/27px $baseFF2;
+		@include media($sm) {
+			margin: 25px 0 21px;
+			font: 500 16px/21px $baseFF2;
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+		&-wrap {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&-text {
+			margin-right: 11px;
+			&:last-child {
+				margin-right: 0;
+			}
+			@include media($sm) {
+				margin-bottom: 5px;
+			}
+			&--days {
+				color: $white;
+				padding: 3px 15px;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 8px;
+			}
+		}
+		&-icon {
+			fill: $white;
+			width: 22px;
+			height: 22px;
+			margin-right: 11px;
+			@include media($sm) {
+				display: none;
+			}
+			&--xs {
+				display: none;
+				@include media($sm) {
+					display: block;
+				}
+			}
+		}
 	}
 
 	&__clock {
+		padding: 3px 10px;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 8px;
+		span {
+			color: $white;
+		}
 	}
 
 	&__btn {
+		@include media($xs) {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
 	&__right {
-	}
+		@include media($sm) {
+			margin: 0 auto 150px;
+		}
+		&-img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
 
-	&__right-img {
-	}
-
-	&__right-decor-left {
-	}
-
-	&__right-decor-right {
+			img {
+				display: block;
+			}
+			@include media($sm) {
+				width: 182px;
+				bottom: -70px;
+				right: calc(50% - 91px);
+			}
+		}
+		&-decor-left {
+			position: absolute;
+			bottom: 0;
+			right: 258px;
+			@include media($sm) {
+				margin: 0 auto;
+				left: -60px;
+				right: auto;
+				width: 200px;
+			}
+		}
+		&-decor-right {
+			position: absolute;
+			bottom: 24px;
+			right: 0;
+		}
 	}
 }

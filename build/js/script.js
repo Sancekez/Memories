@@ -39,9 +39,12 @@ $(document).ready(function () {
 		if ($("#js-burger-menu").hasClass("is-active")) {
 			$("#js-nav-menu").addClass('is-active')
 			$(".js-overflow").addClass('overflow-is-active')
+			$("html").addClass('overflow')
+
 		} else {
 			$("#js-nav-menu").removeClass('is-active')
 			$(".js-overflow").removeClass('overflow-is-active')
+			$("html").removeClass('overflow')
 		}
 	});
 	$("#js-nav-menu").click((e) => {
@@ -72,13 +75,19 @@ $(document).ready(function () {
 
 		let listItems = document.querySelectorAll("#mainContent");
 		let spidometr = document.querySelector("#spidometr");
+		let headerTimer = document.querySelector("#js-header-timer")
+		let mainTimer = document.querySelector("#action-banner-section")
 
 
 		function scrolling(e) {
 
 			if (isPartiallyVisible(spidometr)) {
 				spidometr.classList.add("animation-is-active");
-
+			}
+			if (isPartiallyVisible(mainTimer)) {
+				headerTimer.classList.add("is-hide");
+			} else {
+				headerTimer.classList.remove("is-hide");
 			}
 		}
 
@@ -155,7 +164,7 @@ $(document).ready(function () {
 			let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
 			let minutes = Math.floor(gap / 1000 / 60) % 60;
 			let seconds = Math.floor(gap / 1000) % 60;
-			
+
 			document.getElementById('js-days').innerText = days;
 			document.getElementById('js-days--action-xs').innerText = days;
 			document.getElementById('main-action-days').innerText = hours;
@@ -175,8 +184,20 @@ $(document).ready(function () {
 	}
 
 
+
+
+
+
+
 	animationScroll();
 	timer();
 
 
+
+});
+
+// accardion
+$('.js-accardion-toggle').click(function () {
+	$(this).toggleClass('is-active').next().toggleClass('is-active');
+	return false;
 });

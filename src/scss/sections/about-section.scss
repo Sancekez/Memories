@@ -1,6 +1,9 @@
 .about-section {
 	// margin: 0;
 	position: relative;
+	max-width: 1150px;
+	padding: 0 15px;
+	margin: 0 auto;
 	@include media($xs) {
 		padding: 48px 0 16px;
 	}

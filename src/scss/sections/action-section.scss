@@ -137,4 +137,7 @@
 	&__btn {
 		position: relative;
 	}
+	&.is-hide {
+		display: none;
+	}
 }

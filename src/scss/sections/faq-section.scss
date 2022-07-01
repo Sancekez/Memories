@@ -1,0 +1,42 @@
+.faq-section {
+	background-color: #f8f8f8;
+
+	&__cintainer {
+		max-width: 736px;
+		width: 100%;
+	}
+
+	&__slogan {
+		text-align: center;
+		margin-bottom: 10px;
+		@include media($sm) {
+			text-align: left;
+			.slogan-block {
+				font: 700 12px/14px $baseFF;
+			}
+		}
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 32px;
+		@include media($sm) {
+			text-align: left;
+		}
+	}
+
+	&__accardions {
+	}
+	&__accardion {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@include media($sm) {
+			margin-bottom: 6px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		}
+	}
+}

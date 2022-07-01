@@ -1,0 +1,25 @@
+.soc-list-block {
+	@include flex(space-between, center, center);
+	list-style: none;
+	margin: 0;
+	&__item {
+		svg {
+			height: 12px;
+			width: 12px;
+			fill: #BBC2C9;
+		}
+		margin-right: 6px;
+		&:last-child {
+			margin-right: 0;
+		}
+		height: 30px;
+		width: 30px;
+		@include flex(center, center, center);
+		border-radius: 8px;
+		background-color: #f1f3f4;
+		&:hover {
+			@include time();
+			background-color: #ebebeb;
+		}
+	}
+}

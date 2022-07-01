@@ -22,7 +22,7 @@
 
 <body class="main" id="mainContent">
 
-	<section class="main__action-section action-section">
+	<section class="main__action-section action-section" id="js-header-timer">
 		<div class="action-section__container container">
 			<div class="action-section__wrap">
 				<img src="../img/boom.png" alt="" class="action-section__decor action-section__decor--mod-2">
@@ -684,6 +684,296 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="main__action-banner-section" id="action-banner-section">
+		<div class="main__cintainer container">
+			<div class="action-banner-section">
+				<div class="action-banner-section__info">
+					<div class="action-banner-section__title title-h2">7 секретных методик по  быстрому улучшению памяти </div>
+					<div class="action-banner-section__price">
+						<div class="action-banner-section__price-new">300 ₴</div>
+						<div class="action-banner-section__price-old">1000 ₴</div>
+					</div>
+					<div class="action-banner-section__sail">
+						<span>Скидка 700 ₴</span>
+						<div class="action-banner-section__sail-count">-70%</div>
+					</div>
+					<div class="action-banner-section__time">
+						<svg class="action-banner-section__time-icon action-banner-section__time-icon--xs">
+							<use xlink:href="/img/sprite-svg.svg#clock">
+						</svg>
+						<div class="action-banner-section__time-wrap">
+							<svg class="action-banner-section__time-icon">
+								<use xlink:href="/img/sprite-svg.svg#clock">
+							</svg>
+							<span class="action-banner-section__time-text">Данная цена доступна еще</span>
+							<span class="action-banner-section__time-text action-banner-section__time-text--days" id="main-action-days">0</span>
+							<span class="action-banner-section__time-text">дней</span>
+							<div class="action-banner-section__clock">
+								<span id="main-action-hour">0</span>
+								<span>:</span>
+								<span id="main-action-minutes">0</span>
+								<span>:</span>
+								<span id="main-action-seconds">0</span>
+							</div>
+						</div>
+						
+					</div>
+					<a href="#" class="action-banner-section__btn btn btn--yellow btn--sm-bold">Приобрести</a>
+				</div>
+				<div class="action-banner-section__right">
+					<picture class="action-banner-section__right-img">
+						<source media="(max-width: 998px)" srcset="../img/book-xs.png">
+						<img src="../img/book.png" alt="" >
+					</picture>
+					<img src="../img/lock-left.png" alt="" class="action-banner-section__right-decor-left">
+					<img src="../img/lock-right.png" alt="" class="action-banner-section__right-decor-right">
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<section class="main__faq-section faq-section" id="faq-section">
+		<div class="faq-section__cintainer container">
+			<div class="faq-section__slogan">
+				<div class="slogan-block">FAQ</div>
+			</div>
+			<div class="faq-section__title title-h2">Часто задаваемые вопросы</div>
+			<div class="faq-section__accardions">
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Сколько нужно заниматься в день? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+
+				<div class="faq-section__accardion accardion-block">
+					<div class="accardion-block__container">
+					  <div class="accardion-block__head js-accardion-toggle">
+						 <div class="accardion-block__left">
+							<div class="accardion-block__title">Когда будут первые результаты? 
+							</div>
+						 </div>
+						 <div class="accardion-block__arrow">
+							<svg>
+								<use xlink:href="/img/sprite-svg.svg#arrow-down">
+							</svg>
+						 </div>
+					  </div>
+					  <div class="accardion-block__body js-accardion-body"><a class="accardion-block__item" href="#">Всего 10-15 минут в день дадут вам ощутимый результат</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main__footer-section footer-section">
+		<div class="footer-section__container container">
+			<div class="footer-section__wrap">
+				<div class="footer-section__top">
+					<a href="#" class="footer-section__logo">
+						<svg>
+							<use xlink:href="/img/sprite-svg.svg#logo">
+						</svg>
+					</a>
+					<div class="footer-section__mail">Связаться <a href="mailto:email@gmail.com"> email@gmail.com</a></div>
+						<div class="footer-section__soc-list">
+							<ul class="soc-list-block">
+								<a href="#" class="soc-list-block__item">
+									<svg>
+										<use xlink:href="/img/sprite-svg.svg#instagram">
+									</svg>
+								</a>
+								<a href="#" class="soc-list-block__item">
+									<svg>
+										<use xlink:href="/img/sprite-svg.svg#telegram">
+									</svg>
+								</a>
+								<a href="#" class="soc-list-block__item">
+									<svg>
+										<use xlink:href="/img/sprite-svg.svg#twitter">
+									</svg>
+								</a>
+								<a href="#" class="soc-list-block__item">
+									<svg>
+										<use xlink:href="/img/sprite-svg.svg#facebook">
+									</svg>
+								</a>
+								<a href="#" class="soc-list-block__item">
+									<svg>
+										<use xlink:href="/img/sprite-svg.svg#discord">
+									</svg>
+								</a>
+							</ul>
+						</div>
+					
+				</div>
+				<div class="footer-section__bottom">
+					<div class="footer-section__links">
+						<a href="#" class="footer-section__link">Политика конфиденциальности</a>
+						<a href="#" class="footer-section__link">Политика конфиденциальности</a>
+					</div>
+					<div class="footer-section__right">
+						<div class="footer-section__cards">
+							<div class="footer-section__pay">
+								<img src="../img/visa.jpg" alt="">
+							</div>
+							<div class="footer-section__pay">
+								<img src="../img/ms-card.jpg" alt="">
+							</div>
+						</div>
+						<div class="footer-section__rights"> 2022ⒸAll rights reserved</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 </body>

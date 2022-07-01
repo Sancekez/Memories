@@ -1,0 +1,100 @@
+.accardion-block {
+	background-color: $white;
+	* {
+		transition-duration: 0.2s;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	&__left {
+		@include flex(0, center, center, nowrap);
+	}
+	&__arrow {
+		@include flex(center, center, center);
+		@include time();
+		height: 30px;
+		svg {
+			width: 31px;
+			stroke: $burger-color;
+			display: block;
+			fill: none;
+			stroke-width: 3px;
+			@include media($sm) {
+				width: 19px;
+			}
+		}
+	}
+	&__head {
+		border-radius: 8px;
+		@include flex(space-between, center, center, nowrap);
+		padding: 24px 32px;
+		cursor: pointer;
+		position: relative;
+		&::after {
+			position: absolute;
+			bottom: 0;
+			left: 32px;
+			display: none;
+			content: "";
+			height: 1px;
+			background-color: $border;
+			right: 32px;
+		}
+
+		@include media($sm) {
+			padding: 17px 24px 13px 24px;
+
+			&::after {
+				left: 24px;
+				right: 24px;
+			}
+		}
+
+		&.is-active {
+			&::after {
+				display: block;
+			}
+			.accardion-block__arrow {
+				transform: rotate(-180deg);
+				svg {
+					fill: #3e3be7;
+					stroke: #3e3be7;
+				}
+			}
+		}
+	}
+	&__title {
+		font: 500 20px/24px $baseFF;
+		@include media($sm) {
+			font: 500 15px/18px $baseFF;
+		}
+	}
+
+	&__body {
+		border-radius: 0 0 8px 8px;
+		padding: 0 32px 0;
+		@include time();
+		margin: 0;
+		max-height: 0;
+		opacity: 1;
+		pointer-events: none;
+		overflow: hidden; /* transition: all .7s linear;  padding: 0 15px; */
+		font: 400 18px/29px $baseFF;
+		@include media($sm) {
+			font: 400 15px/24px $baseFF;
+			padding: 0 24px 0;
+		}
+		&:last-child {
+			border-top: 0;
+		}
+
+		&.is-active {
+			padding-top: 13px;
+			padding-bottom: 24px;
+			max-height: 2300px;
+			opacity: 1;
+			pointer-events: auto;
+			@include media($sm) {
+				padding-bottom: 17px;
+			}
+		}
+	}
+}

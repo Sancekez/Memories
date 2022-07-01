@@ -1,6 +1,9 @@
 .main {
 	overflow-x: hidden;
 	padding-top: 60px;
+	@include media($sm) {
+		padding-top: 70px;
+	}
 	&__banner {
 		padding: 139px 0 218px;
 		@include media($md) {
@@ -61,5 +64,11 @@
 		left: 0;
 		right: 0;
 		z-index: 22;
+	}
+	&__action-banner-section {
+		margin-bottom: 20px;
+	}
+	&__faq-section {
+		padding: 45px 0;
 	}
 }

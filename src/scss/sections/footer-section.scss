@@ -1,0 +1,127 @@
+.footer-section {
+	&__container {
+	}
+
+	&__wrap {
+		@include flex(0, 0, 0, nowrap, column);
+	}
+
+	&__top {
+		@include flex(space-between, center, center);
+		padding: 31px 0 22px;
+		border-bottom: 1px solid $border;
+	}
+
+	&__logo {
+		display: flex;
+		flex: 1 1 auto;
+		@include media($sm) {
+			order: 1;
+		}
+		svg {
+			width: 87px;
+			height: 15px;
+		}
+	}
+
+	&__info {
+		@include flex(0, center, center);
+	}
+
+	&__mail {
+		margin-right: 29px;
+		font: 400 16px/19px $baseFF;
+		color: $burger-color;
+		@include media($sm) {
+			border-top: 1px solid $border;
+			order: 3;
+			width: 100%;
+			padding-top: 10px;
+			margin-top: 19px;
+			margin-right: 0;
+		}
+		a {
+			font-weight: 500;
+			margin-left: 6px;
+			color: $text-color;
+		}
+	}
+
+	&__soc-list {
+		@include media($sm) {
+			order: 2;
+			margin: 0 20px;
+		}
+		@include media($xs) {
+			margin: 0 0 0 10px;
+		}
+	}
+
+	&__bottom {
+		@include flex(space-between, center, center);
+		padding: 22px 0 31px;
+		@include media($sm) {
+			padding: 16px 0 30px;
+		}
+	}
+
+	&__links {
+		@include flex(0, center, center);
+		font: 500 16px/21px $baseFF2;
+		@include media($sm) {
+			flex-direction: column;
+			padding-bottom: 23px;
+		}
+	}
+
+	&__link {
+		margin-right: 24px;
+		color: $burger-color;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		@include media($sm) {
+			margin-right: 0;
+			margin-bottom: 24px;
+			&:last-child {
+				margin-bottom: 0
+			}
+		}
+	}
+
+	&__right {
+		@include flex(space-between, center, center);
+		@include media($sm) {
+			width: 100%;
+			flex-direction: row-reverse;
+			border-top:  1px solid $border;
+			padding-top: 20px;
+		}
+	}
+
+	&__cards {
+		@include flex(center,center,center,nowrap);
+	}
+
+	&__pay {
+		@include flex(0,center,center);
+		height: 31px;
+		margin-right: 18px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__rights {
+		font: 500 16px/21px $baseFF2;
+		color: $burger-color;
+		margin-left: 23px;
+		@include media($sm) {
+			margin-left: 0;
+			
+		}
+	}
+}
