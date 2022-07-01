@@ -21,6 +21,9 @@
 			align-items: center;
 		}
 		svg {
+			width: 24px;
+			height: 24px;
+			stroke: #979797;
 			@include media($xs) {
 				width: 18px;
 				height: 18px;

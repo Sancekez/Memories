@@ -27,24 +27,30 @@
 	}
 
 	&__img {
-		width: 100%;
-		object-fit: contain;
-		&-lg {
+		img {
+			width: 100%;
+			// object-fit: contain;
 			display: block;
 			position: absolute;
 			padding: 0 15px;
 			left: 0;
 			bottom: 0;
+
 			@include media($xs) {
-				display: none;
+				max-width: 400px;
+				display: block;
+				position: relative;
+				width: 100%;
 			}
 		}
+		@include media($xs) {
+			margin: 0 auto;
+		}
+
 		&-sm {
 			padding: 0 15px;
-			margin: 0 auto;
 			display: none;
 			max-width: 400px;
-			position: relative;
 			@include media($xs) {
 				display: block;
 				width: 100%;

@@ -21,6 +21,10 @@
 	}
 	&__item-icon {
 		svg {
+			width: 30px;
+			height: 21px;
+			fill: none;
+			stroke-width: 2px;
 			stroke: $text-color;
 			@include media($xs) {
 				width: 24px
